@@ -9,21 +9,24 @@ def get_acc(test, predictions_list):
 
 
 def get_sensivity(test, predictions_list):
-    actually_spam = sum([1 for x in test if x.is_spam])
+    actually_spam = sum([1 for x in test if x.is_spam]) # P = (TP + FN)
     TP = len([1 for x, y in zip(test, predictions_list)
               if (y == True and x.is_spam)])
     return TP / actually_spam
 
 
 def get_specifity(test, predictions_list):
-    # TO TRZEBA NAPISAĆ (przekleić z get_sensivity i zmienić jedną linijkę zgodnie z
-    # definicją specifity
-    pass
+    actually_email = sum([1 for x in test if not x.is_spam]) #N = (TN + FP)
+    TN = len([1 for x, y in zip(test, predictions_list)
+              if (y == False and not x.is_spam)])
+    return TN / actually_email
 
 
 def get_precision(test, predictions_list):
-    # JW
-    pass
+    all_positives = sum(predictions_list)
+    TP = len([1 for x, y in zip(test, predictions_list)
+              if (y == True and x.is_spam)])
+    return TP / all_positives
 
 
 def get_fmeas(test, predictions_list):
@@ -47,7 +50,7 @@ emails_list = emails.Email.emails_list
 train_set = emails_list[:int(0.9 * len(emails_list))]
 test_set = emails_list[int(0.9 * len(emails_list)):]
 acc, sens, spec, prec, fmeas = evaluate(
-    train_set, test_set, classifier.Bayes)
+    train_set, test_set, classifier.Bayes_laplac)
 print('accuracy:\t', acc)
 print('sensivity:\t', sens)
 print('specifity:\t', spec)
