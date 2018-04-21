@@ -52,11 +52,6 @@ result_file = open('own_parameters', 'w')
 result_file.write('BEST 10 RESULTS\n\n')
 
 for i in results_sorted[:10]:
-    # SAVE PLOT FOR BEST RESULT
-    if i == 0:
-        clf = tree.DecisionTreeClassifier(max_depth=i[0], min_samples_split=i[1], min_samples_leaf=i[2], presort=i[3])
-        clf = clf.fit(test_X, test_Y)
-        save_plot()
 
     result_file.write('TRAIN SET - MAX DEPTH ' + str(i[0]) + ' MIN_SAMPLES_SPLIT ' + str(i[1]) + ' MIN_SAMPLES_LEAF ' + str(i[2]) + ' PRESORT ' + str(i[3]) + '\n')
     result_file.write('accuracy: ' + str(i[4]) + '\n\n')
@@ -65,3 +60,8 @@ for i in results_sorted[:10]:
     result_file.write('accuracy: ' + str(i[5]) + '\n\n')
 
 result_file.close()
+
+# SAVE PLOT FOR BEST RESULT
+clf = tree.DecisionTreeClassifier(max_depth=results_sorted[0][0], min_samples_split=results_sorted[0][1], min_samples_leaf=results_sorted[0][2], presort=results_sorted[0][3])
+clf = clf.fit(test_X, test_Y)
+save_plot()
