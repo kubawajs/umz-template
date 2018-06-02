@@ -46,6 +46,35 @@ class Bayes(classifier):
         cls.set_all_words_probs()
 
     @classmethod
+    def save_most_common_words(cls, data_set):
+        cls.spam_words_dict = dict()
+        cls.ham_words_dict = dict()
+        cls.set_apriori(data_set)
+        for email in data_set:
+            if email.is_spam:
+                cls.add_tokens_to_dict(email, cls.spam_words_dict)
+            else:
+                cls.add_tokens_to_dict(email, cls.ham_words_dict)
+            cls.print_progress(data_set)
+
+        # save most common ham & spam words
+        file_to_save = open('most_common_words', 'w')       
+        
+        most_common_ham_words = sorted(cls.ham_words_dict.items(), key=lambda x: x[1], reverse=True)       
+        file_to_save.write('lista najczęstszych słów dla ham:\n')
+        for word in most_common_ham_words[:10]:
+            file_to_save.write(str(word[0]) + ' - ' + str(word[1]) + '\n')
+
+        file_to_save.write('\n')
+
+        most_common_spam_words = sorted(cls.spam_words_dict.items(), key=lambda x: x[1], reverse=True)
+        file_to_save.write('lista najczęstszych słów dla spam:\n')
+        for word in most_common_spam_words[:10]:
+            file_to_save.write(str(word[0]) + ' - ' + str(word[1]) + '\n')
+
+        file_to_save.close()
+
+    @classmethod
     def predict(cls, data_set):
         preds = []
         progress = 0
