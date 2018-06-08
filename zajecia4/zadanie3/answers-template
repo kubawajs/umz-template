@@ -1,16 +1,164 @@
-YOUR OWN PARAMETERS:
-TRAIN SET- 
-accuracy:
+YOUR OWN NUMBER OF NEIGHBORS:
 
-TEST SET- 
-accuracy:
+BEST 10 RESULTS
 
-----------
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 1
+accuracy: 1.0
 
-TRAIN SET- 
-accuracy:
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 1
+accuracy: 0.6818181818181818
 
-TEST SET- 
-accuracy:
+--------------------
 
-... ( to be completed with new parametrized models)
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 2
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 2
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 3
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 3
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 5
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 5
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 10
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 10
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 15
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 15
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 20
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 20
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 30
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: uniform LEAF SIZE: 30
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 1
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 1
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 2
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 2
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 3
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 3
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 5
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 5
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 10
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 10
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 15
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 15
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 20
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 20
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 30
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: ball_tree WEIGHTS: distance LEAF SIZE: 30
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: kd_tree WEIGHTS: uniform LEAF SIZE: 1
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: kd_tree WEIGHTS: uniform LEAF SIZE: 1
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: kd_tree WEIGHTS: uniform LEAF SIZE: 2
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: kd_tree WEIGHTS: uniform LEAF SIZE: 2
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: kd_tree WEIGHTS: uniform LEAF SIZE: 3
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: kd_tree WEIGHTS: uniform LEAF SIZE: 3
+accuracy: 0.6818181818181818
+
+--------------------
+
+TRAIN SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: kd_tree WEIGHTS: uniform LEAF SIZE: 5
+accuracy: 1.0
+
+TEST SET - NUMBER OF NEIGHBORS: 1 ALGORITHM: kd_tree WEIGHTS: uniform LEAF SIZE: 5
+accuracy: 0.6818181818181818
+
+--------------------
+
